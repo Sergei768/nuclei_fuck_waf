@@ -2,6 +2,8 @@
 
 Bypass Cloudflare and other WAFs for Nuclei by stealing real browser fingerprints. Solve the challenge once, scan freely.
 
+![Demo](video.gif)
+
 ## Principle
 
 1. **Open** target in real Chrome
@@ -15,10 +17,10 @@ WAF sees real browser → lets you through.
 ## Install
 
 ```bash
+Need: Python 3.8+, Chrome/Chromium, Nuclei
 python3 -m venv venv
 source venv/bin/activate
 pip install nodriver
-Need: Python 3.8+, Chrome/Chromium, Nuclei
 
 usage:
 python3 nfw.py https://target.com
